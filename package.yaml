@@ -1,0 +1,36 @@
+name:                curl-cookiejar
+version:             "0.1.0.0"
+synopsis:            "Parsing and pretty-printing of cURL/wget cookie jars"
+description:         "See README.md"
+github:              "plow-technologies/curl-cookiejar"
+license:             MIT
+license-file:        LICENSE
+author:              "Edward Amsden"
+maintainer:          "edward.amsden@plowtech.net"
+copyright:           "2019 Plow Technologies"
+
+extra-source-files:
+- README.md
+
+dependencies:
+- attoparsec
+- base
+- bytestring
+- conduit
+- conduit-extra
+- http-client
+- time
+
+ghc-options:
+- -Wall
+- -Werror
+- -Wincomplete-uni-patterns
+- -Wincomplete-record-updates
+
+library:
+  source-dirs: src
+  exposed-modules:
+  - Data.CURL.CookieJar
+  - Data.CURL.CookieJar.Conduit
+  - Data.CURL.CookieJar.Parser
+  - Data.CURL.CookieJar.PrettyPrinter

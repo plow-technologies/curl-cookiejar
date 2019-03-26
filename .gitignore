@@ -1,0 +1,3 @@
+curl-cookiejar.cabal
+dist/
+dist-newstyle/
