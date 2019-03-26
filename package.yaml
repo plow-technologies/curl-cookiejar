@@ -12,6 +12,7 @@ copyright:           "2019 Plow Technologies"
 
 extra-source-files:
 - README.md
+- ChangeLog.md
 
 dependencies:
 - attoparsec
