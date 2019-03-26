@@ -2,6 +2,7 @@ name:                curl-cookiejar
 version:             "0.1.0.0"
 synopsis:            "Parsing and pretty-printing of cURL/wget cookie jars"
 description:         "See README.md"
+category:            "Web"
 github:              "plow-technologies/curl-cookiejar"
 license:             MIT
 license-file:        LICENSE
@@ -14,7 +15,7 @@ extra-source-files:
 
 dependencies:
 - attoparsec
-- base
+- base >= 4.10 && < 5
 - bytestring
 - conduit
 - conduit-extra
@@ -23,7 +24,6 @@ dependencies:
 
 ghc-options:
 - -Wall
-- -Werror
 - -Wincomplete-uni-patterns
 - -Wincomplete-record-updates
 
