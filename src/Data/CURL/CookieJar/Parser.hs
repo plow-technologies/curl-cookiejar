@@ -44,7 +44,7 @@ cookieJarParser = createCookieJar <$> many' cookieParser
 -- field in the Cookie datatype
 cookieParser :: Parser Cookie
 cookieParser = 
-  skipSpace *> httpOnlyLine <|> commentLine <|> cookieLine
+  skipSpace *> (httpOnlyLine <|> commentLine <|> cookieLine)
   where
     httpOnlyLine = try $ "#HttpOnly_" *> cookieLineParser True
     commentLine = "#" *> skipWhile notEndOfLine *> endOfLine *> cookieParser
